@@ -64,7 +64,9 @@ El plan de Figma es Professional, así que la conexión se hace sin Code Connect
 
 - **`figma-map.json`**: cada componente con su nodo de Figma y la equivalencia de propiedades (por ejemplo *Estilo = Primario* → `variant="primary"`).
 - **Storybook → Figma**: cada página de documentación tiene el enlace "Ver en Figma".
-- **Figma → Storybook**: en cada componente de Figma se agrega el enlace a su página de Storybook como *Dev resource*.
+- **Figma → Storybook**: cada componente de la página *Componentes* (y cada ícono) tiene:
+  - un **enlace de documentación** a su página de Storybook, visible al inspeccionar el componente y en Dev Mode;
+  - una **descripción** con el ejemplo de código React y la equivalencia de propiedades Figma → código, visible en el panel lateral y en el panel de Assets.
 - **Nombres de variables**: los tokens CSS usan los mismos nombres que muestra Dev Mode en Figma.
 
 ## Publicación
