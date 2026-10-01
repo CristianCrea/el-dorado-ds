@@ -1,0 +1,24 @@
+.ld-tabs {
+  display: flex;
+  gap: var(--spacing-4);
+  padding: var(--spacing-4);
+  border-radius: var(--radius-lg);
+  background: var(--background-tertiary);
+}
+.ld-tabs__tab {
+  flex: 1;
+  padding: var(--spacing-10) var(--spacing-12);
+  border: 0;
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--ld-font-family);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.ld-tabs__tab--active {
+  background: var(--cta-secondary-default);
+  color: var(--cta-secondary-text);
+  font-weight: 700;
+}

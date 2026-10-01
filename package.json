@@ -1,0 +1,60 @@
+{
+  "name": "@liga-el-dorado/ds",
+  "version": "0.1.0",
+  "description": "Sistema de diseño Liga El Dorado: tokens, componentes React y Storybook",
+  "license": "UNLICENSED",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CristianCrea/el-dorado-ds.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./styles.css": "./dist/el-dorado-ds.css"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "tokens:convert": "node scripts/figma-to-dtcg.mjs",
+    "tokens:build": "node scripts/build-tokens.mjs",
+    "tokens": "npm run tokens:convert && npm run tokens:build",
+    "tokens:check": "npm run tokens && git diff --exit-code -- tokens/dtcg src/styles/tokens.css",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "vite build && tsc -p tsconfig.build.json",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build -o storybook-static",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@storybook/addon-docs": "^10.6.1",
+    "@storybook/react-vite": "^10.6.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "jsdom": "^26.1.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "storybook": "^10.6.1",
+    "style-dictionary": "^5.5.5",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.6",
+    "vitest": "^3.2.7"
+  }
+}

@@ -1,0 +1,15 @@
+.ld-team-badge {
+  --ld-team-color: var(--background-inverse);
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: var(--radius-full);
+  background: var(--ld-team-color);
+  color: var(--text-on-color);
+  font-family: var(--ld-font-family);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+.ld-team-badge--sm { width: 28px; height: 28px; font-size: 10px; font-weight: 700; }
+.ld-team-badge--md { width: 40px; height: 40px; font-size: 14px; font-weight: 900; }
+.ld-team-badge--lg { width: 80px; height: 80px; font-size: 28px; font-weight: 900; border: 3px solid var(--outline-brand); }

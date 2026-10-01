@@ -1,0 +1,35 @@
+.ld-fixture-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-10);
+  padding: var(--spacing-14);
+  border: 1px solid var(--outline-default);
+  border-radius: var(--radius-lg);
+  background: var(--background-primary);
+  color: var(--text-primary);
+  font-family: var(--ld-font-family);
+}
+.ld-fixture-card--interactive { cursor: pointer; transition: border-color 0.15s ease, box-shadow 0.15s ease; }
+.ld-fixture-card--interactive:hover { border-color: var(--outline-strong); box-shadow: 0 4px 14px rgb(12 10 9 / 0.05); }
+
+.ld-fixture-card__meta { display: flex; align-items: center; justify-content: space-between; gap: var(--spacing-12); }
+.ld-fixture-card__date { display: block; font-size: 12px; font-weight: 600; }
+.ld-fixture-card__time,
+.ld-fixture-card__venue { font-size: 11px; color: var(--text-tertiary); }
+.ld-fixture-card__venue { text-align: right; }
+
+.ld-fixture-card__divider { margin: 0; border: 0; border-top: 1px solid var(--outline-default); }
+
+.ld-fixture-card__matchup { display: flex; align-items: center; gap: var(--spacing-8); }
+.ld-fixture-card__team { flex: 1; min-width: 0; display: flex; align-items: center; gap: var(--spacing-8); }
+.ld-fixture-card__team--away { justify-content: flex-end; text-align: right; }
+.ld-fixture-card__team-name {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+button.ld-fixture-card__team-name:hover { text-decoration: underline; text-underline-offset: 2px; }
+.ld-fixture-card__vs { font-size: 12px; font-weight: 800; color: var(--text-tertiary); }

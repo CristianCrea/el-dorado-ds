@@ -1,0 +1,19 @@
+.ld-day-chip {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-2);
+  width: 46px;
+  padding: var(--spacing-8) 0;
+  border: 1px solid var(--outline-default);
+  border-radius: var(--radius-md);
+  background: var(--background-primary);
+  color: var(--text-primary);
+  font-family: var(--ld-font-family);
+  cursor: pointer;
+}
+.ld-day-chip__day { font-size: 10px; font-weight: 600; letter-spacing: 0.3px; color: var(--text-secondary); }
+.ld-day-chip__date { font-size: 15px; font-weight: 800; }
+
+.ld-day-chip--selected { background: var(--background-brand); border-color: var(--background-brand); color: var(--text-on-brand); }
+.ld-day-chip--selected .ld-day-chip__day { color: var(--text-on-brand); }

@@ -1,0 +1,144 @@
+{
+  "typography": {
+    "Display": {
+      "Team": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Inter",
+          "fontWeight": 900,
+          "fontSize": "30px",
+          "lineHeight": 0.92,
+          "letterSpacing": "-0.5px"
+        }
+      },
+      "Stat": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Inter",
+          "fontWeight": 900,
+          "fontSize": "24px",
+          "lineHeight": "normal",
+          "letterSpacing": "0px"
+        }
+      }
+    },
+    "Title": {
+      "Brand": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Inter",
+          "fontWeight": 800,
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "letterSpacing": "0.2px"
+        }
+      },
+      "Date": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Inter",
+          "fontWeight": 800,
+          "fontSize": "15px",
+          "lineHeight": "normal",
+          "letterSpacing": "0px"
+        }
+      }
+    },
+    "Heading": {
+      "Section": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Inter",
+          "fontWeight": 800,
+          "fontSize": "13px",
+          "lineHeight": "normal",
+          "letterSpacing": "0.4px"
+        }
+      }
+    },
+    "Label": {
+      "Button": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Inter",
+          "fontWeight": 800,
+          "fontSize": "13px",
+          "lineHeight": "normal",
+          "letterSpacing": "0.4px"
+        }
+      },
+      "Strong": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Inter",
+          "fontWeight": 600,
+          "fontSize": "13px",
+          "lineHeight": "normal",
+          "letterSpacing": "0px"
+        }
+      },
+      "Medium": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Inter",
+          "fontWeight": 600,
+          "fontSize": "12px",
+          "lineHeight": "normal",
+          "letterSpacing": "0px"
+        }
+      },
+      "Team": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Inter",
+          "fontWeight": 600,
+          "fontSize": "11px",
+          "lineHeight": "normal",
+          "letterSpacing": "0.1px"
+        }
+      },
+      "Caption": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Inter",
+          "fontWeight": 600,
+          "fontSize": "10px",
+          "lineHeight": "normal",
+          "letterSpacing": "0.3px"
+        }
+      }
+    },
+    "Body": {
+      "Paragraph": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Inter",
+          "fontWeight": 400,
+          "fontSize": "13px",
+          "lineHeight": 1.5,
+          "letterSpacing": "0px"
+        }
+      },
+      "Medium": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Inter",
+          "fontWeight": 500,
+          "fontSize": "13px",
+          "lineHeight": "normal",
+          "letterSpacing": "0px"
+        }
+      },
+      "Small": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Inter",
+          "fontWeight": 400,
+          "fontSize": "11px",
+          "lineHeight": "normal",
+          "letterSpacing": "0px"
+        }
+      }
+    }
+  }
+}

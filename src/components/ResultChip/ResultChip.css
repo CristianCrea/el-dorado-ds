@@ -1,0 +1,15 @@
+.ld-result-chip {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  font-family: var(--ld-font-family);
+  font-size: 11px;
+  font-weight: 800;
+}
+.ld-result-chip--win { background: var(--background-brand); color: var(--text-on-brand); }
+.ld-result-chip--draw { background: var(--background-tertiary); color: var(--text-primary); }
+.ld-result-chip--loss { background: var(--semantic-error-background); color: var(--semantic-error-text); }

@@ -1,0 +1,96 @@
+{
+  "description": "Relación entre los componentes de Figma y los de código. Reemplaza a Code Connect mientras el plan de Figma sea Professional: la usan las personas, los asistentes de IA y la verificación de CI.",
+  "figmaFile": {
+    "key": "O72IfV29ZUupkthYAASwE7",
+    "url": "https://www.figma.com/design/O72IfV29ZUupkthYAASwE7/Liga-el-dorado",
+    "componentsPage": "Componentes"
+  },
+  "components": [
+    {
+      "figma": { "name": "Button", "nodeId": "14:34" },
+      "code": { "name": "Button", "path": "src/components/Button/Button.tsx" },
+      "props": {
+        "Estilo": { "prop": "variant", "values": { "Primario": "primary", "Secundario": "secondary" } },
+        "Estado": { "prop": null, "note": "Hover y Pressed los resuelve CSS; Disabled es el atributo `disabled`." },
+        "Label": { "prop": "children" },
+        "Mostrar ícono": { "prop": "icon", "note": "Sin `icon` no se muestra ícono." },
+        "Ícono": { "prop": "icon" }
+      }
+    },
+    {
+      "figma": { "name": "Icon Button", "nodeId": "14:46" },
+      "code": { "name": "IconButton", "path": "src/components/IconButton/IconButton.tsx" },
+      "props": {
+        "Estilo": { "prop": "variant", "values": { "Tonal": "tonal", "Sobre color": "on-color" } },
+        "Ícono": { "prop": "icon" },
+        "Notificación": { "prop": "notification" }
+      }
+    },
+    {
+      "figma": { "name": "Team Badge", "nodeId": "13:11" },
+      "code": { "name": "TeamBadge", "path": "src/components/TeamBadge/TeamBadge.tsx" },
+      "props": {
+        "Tamaño": { "prop": "size", "values": { "S": "sm", "M": "md", "L": "lg" } },
+        "Iniciales": { "prop": "initials" },
+        "(relleno de la instancia)": { "prop": "color" }
+      }
+    },
+    {
+      "figma": { "name": "Result Chip", "nodeId": "13:27" },
+      "code": { "name": "ResultChip", "path": "src/components/ResultChip/ResultChip.tsx" },
+      "props": {
+        "Resultado": { "prop": "result", "values": { "Ganado": "win", "Empate": "draw", "Perdido": "loss" } }
+      }
+    },
+    {
+      "figma": { "name": "Day Chip", "nodeId": "13:19" },
+      "code": { "name": "DayChip", "path": "src/components/DayChip/DayChip.tsx" },
+      "props": {
+        "Estado": { "prop": "selected", "values": { "Default": false, "Seleccionado": true } },
+        "Día": { "prop": "day" },
+        "Fecha": { "prop": "date" }
+      }
+    },
+    {
+      "figma": { "name": "Tab", "nodeId": "14:52" },
+      "code": { "name": "Tabs", "path": "src/components/Tabs/Tabs.tsx" },
+      "props": {
+        "Estado": { "prop": "value", "note": "En código el grupo completo es un componente; la pestaña activa es la que coincide con `value`." },
+        "Label": { "prop": "items[].label" }
+      }
+    },
+    {
+      "figma": { "name": "Section Header", "nodeId": "15:14" },
+      "code": { "name": "SectionHeader", "path": "src/components/SectionHeader/SectionHeader.tsx" },
+      "props": {
+        "Título": { "prop": "title" },
+        "Link": { "prop": "linkLabel" },
+        "Mostrar link": { "prop": "linkLabel", "note": "Sin `linkLabel` el enlace se oculta." }
+      }
+    },
+    {
+      "figma": { "name": "Fixture Card", "nodeId": "15:42" },
+      "code": { "name": "FixtureCard", "path": "src/components/FixtureCard/FixtureCard.tsx" },
+      "props": {
+        "Fecha": { "prop": "date" },
+        "Hora": { "prop": "time" },
+        "Estadio": { "prop": "venue" },
+        "Local": { "prop": "home.name" },
+        "Visitante": { "prop": "away.name" },
+        "escudo local / escudo visitante": { "prop": "home / away", "note": "Iniciales y color de cada club." }
+      }
+    },
+    {
+      "figma": { "name": "Bottom Nav", "nodeId": "15:290" },
+      "code": { "name": "BottomNav", "path": "src/components/BottomNav/BottomNav.tsx" },
+      "props": {
+        "Activo": { "prop": "active", "values": { "Inicio": "inicio", "Siguiendo": "siguiendo", "Perfil": "perfil" } }
+      }
+    }
+  ],
+  "pending": [
+    "App Header", "Status Bar", "Nav Item", "Stat Item", "Info Row", "Player Row", "Filter Pill", "Position Tag",
+    "Top Bar", "Next Match Card", "Zone Option", "Text Field", "Payment Method", "Checkout Bar", "Radio",
+    "Progress Steps", "Quantity Stepper", "Head to Head Row", "Lineup Player", "Absence Row"
+  ]
+}

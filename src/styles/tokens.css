@@ -1,0 +1,307 @@
+/**
+ * Liga El Dorado · tokens de diseño
+ * Archivo generado por scripts/build-tokens.mjs a partir de las variables de Figma.
+ * No lo edites a mano: cambia la variable en Figma, exporta y ejecuta npm run tokens.
+ */
+:root {
+  --ld-font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --color-dorado-50: #fcf9ea;
+  --color-dorado-100: #f9f1ca;
+  --color-dorado-200: #f4e398;
+  --color-dorado-300: #edd478;
+  --color-dorado-400: #e6c14a;
+  --color-dorado-500: #dca82a;
+  --color-dorado-600: #c2851f;
+  --color-dorado-700: #9b611c;
+  --color-dorado-800: #804d1e;
+  --color-dorado-900: #6d401e;
+  --color-dorado-950: #3f210d;
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #fafaf9;
+  --color-neutral-100: #f5f5f4;
+  --color-neutral-200: #e7e5e4;
+  --color-neutral-300: #d6d3d1;
+  --color-neutral-400: #a8a29e;
+  --color-neutral-500: #78716c;
+  --color-neutral-600: #57534e;
+  --color-neutral-700: #44403c;
+  --color-neutral-800: #292524;
+  --color-neutral-900: #1c1917;
+  --color-neutral-950: #0c0a09;
+  --color-green-50: #f0fdf4;
+  --color-green-100: #dcfce7;
+  --color-green-300: #86efac;
+  --color-green-500: #22c55e;
+  --color-green-600: #16a34a;
+  --color-green-700: #15803d;
+  --color-green-900: #14532d;
+  --color-red-50: #fef2f2;
+  --color-red-100: #fee2e2;
+  --color-red-300: #fca5a5;
+  --color-red-500: #ef4444;
+  --color-red-600: #dc2626;
+  --color-red-700: #b91c1c;
+  --color-red-900: #7f1d1d;
+  --color-orange-50: #fff7ed;
+  --color-orange-100: #ffedd5;
+  --color-orange-300: #fdba74;
+  --color-orange-500: #f97316;
+  --color-orange-600: #ea580c;
+  --color-orange-700: #c2410c;
+  --color-orange-900: #7c2d12;
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-300: #93c5fd;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+  --color-blue-900: #1e3a8a;
+  --spacing-0: 0px;
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 28px;
+  --radius-full: 999px;
+  --background-primary: var(--color-neutral-0);
+  --background-secondary: var(--color-neutral-50);
+  --background-tertiary: var(--color-neutral-100);
+  --background-inverse: var(--color-neutral-950);
+  --background-brand: var(--color-dorado-300);
+  --background-brand-subtle: var(--color-dorado-50);
+  --background-on-color: var(--color-neutral-0);
+  --background-spotlight: var(--color-neutral-950);
+  --text-primary: var(--color-neutral-950);
+  --text-secondary: var(--color-neutral-600);
+  --text-tertiary: var(--color-neutral-400);
+  --text-disabled: var(--color-neutral-300);
+  --text-inverse: var(--color-neutral-0);
+  --text-brand: var(--color-dorado-700);
+  --text-on-brand: var(--color-neutral-950);
+  --text-on-color: var(--color-neutral-0);
+  --cta-primary-default: var(--color-dorado-300);
+  --cta-primary-hover: var(--color-dorado-400);
+  --cta-primary-pressed: var(--color-dorado-500);
+  --cta-primary-text: var(--color-neutral-950);
+  --cta-secondary-default: var(--color-neutral-950);
+  --cta-secondary-hover: var(--color-neutral-800);
+  --cta-secondary-pressed: var(--color-neutral-700);
+  --cta-secondary-text: var(--color-neutral-0);
+  --cta-tertiary-text: var(--color-dorado-700);
+  --cta-tertiary-hover: var(--color-dorado-50);
+  --cta-disabled-default: var(--color-neutral-100);
+  --cta-disabled-text: var(--color-neutral-400);
+  --outline-default: var(--color-neutral-200);
+  --outline-subtle: var(--color-neutral-100);
+  --outline-strong: var(--color-neutral-300);
+  --outline-inverse: var(--color-neutral-950);
+  --outline-brand: var(--color-dorado-300);
+  --outline-focus: var(--color-dorado-500);
+  --icon-primary: var(--color-neutral-950);
+  --icon-secondary: var(--color-neutral-500);
+  --icon-disabled: var(--color-neutral-300);
+  --icon-inverse: var(--color-neutral-0);
+  --icon-brand: var(--color-dorado-500);
+  --icon-on-brand: var(--color-neutral-950);
+  --icon-on-color: var(--color-neutral-0);
+  --semantic-success-background: var(--color-green-50);
+  --semantic-success-solid: var(--color-green-600);
+  --semantic-success-text: var(--color-green-700);
+  --semantic-success-icon: var(--color-green-600);
+  --semantic-success-outline: var(--color-green-300);
+  --semantic-error-background: var(--color-red-50);
+  --semantic-error-solid: var(--color-red-600);
+  --semantic-error-text: var(--color-red-700);
+  --semantic-error-icon: var(--color-red-600);
+  --semantic-error-outline: var(--color-red-300);
+  --semantic-warning-background: var(--color-orange-50);
+  --semantic-warning-solid: var(--color-orange-600);
+  --semantic-warning-text: var(--color-orange-700);
+  --semantic-warning-icon: var(--color-orange-600);
+  --semantic-warning-outline: var(--color-orange-300);
+  --semantic-info-background: var(--color-blue-50);
+  --semantic-info-solid: var(--color-blue-600);
+  --semantic-info-text: var(--color-blue-700);
+  --semantic-info-icon: var(--color-blue-600);
+  --semantic-info-outline: var(--color-blue-300);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --background-primary: var(--color-neutral-950);
+  --background-secondary: var(--color-neutral-900);
+  --background-tertiary: var(--color-neutral-800);
+  --background-inverse: var(--color-neutral-0);
+  --background-brand: var(--color-dorado-300);
+  --background-brand-subtle: var(--color-dorado-950);
+  --background-on-color: var(--color-neutral-0);
+  --background-spotlight: var(--color-neutral-900);
+  --text-primary: var(--color-neutral-50);
+  --text-secondary: var(--color-neutral-400);
+  --text-tertiary: var(--color-neutral-500);
+  --text-disabled: var(--color-neutral-700);
+  --text-inverse: var(--color-neutral-950);
+  --text-brand: var(--color-dorado-300);
+  --text-on-brand: var(--color-neutral-950);
+  --text-on-color: var(--color-neutral-0);
+  --cta-primary-default: var(--color-dorado-300);
+  --cta-primary-hover: var(--color-dorado-200);
+  --cta-primary-pressed: var(--color-dorado-400);
+  --cta-primary-text: var(--color-neutral-950);
+  --cta-secondary-default: var(--color-neutral-0);
+  --cta-secondary-hover: var(--color-neutral-100);
+  --cta-secondary-pressed: var(--color-neutral-200);
+  --cta-secondary-text: var(--color-neutral-950);
+  --cta-tertiary-text: var(--color-dorado-300);
+  --cta-tertiary-hover: var(--color-dorado-950);
+  --cta-disabled-default: var(--color-neutral-800);
+  --cta-disabled-text: var(--color-neutral-600);
+  --outline-default: var(--color-neutral-800);
+  --outline-subtle: var(--color-neutral-900);
+  --outline-strong: var(--color-neutral-700);
+  --outline-inverse: var(--color-neutral-0);
+  --outline-brand: var(--color-dorado-400);
+  --outline-focus: var(--color-dorado-300);
+  --icon-primary: var(--color-neutral-50);
+  --icon-secondary: var(--color-neutral-400);
+  --icon-disabled: var(--color-neutral-700);
+  --icon-inverse: var(--color-neutral-950);
+  --icon-brand: var(--color-dorado-300);
+  --icon-on-brand: var(--color-neutral-950);
+  --icon-on-color: var(--color-neutral-0);
+  --semantic-success-background: var(--color-green-900);
+  --semantic-success-solid: var(--color-green-500);
+  --semantic-success-text: var(--color-green-300);
+  --semantic-success-icon: var(--color-green-500);
+  --semantic-success-outline: var(--color-green-700);
+  --semantic-error-background: var(--color-red-900);
+  --semantic-error-solid: var(--color-red-500);
+  --semantic-error-text: var(--color-red-300);
+  --semantic-error-icon: var(--color-red-500);
+  --semantic-error-outline: var(--color-red-700);
+  --semantic-warning-background: var(--color-orange-900);
+  --semantic-warning-solid: var(--color-orange-500);
+  --semantic-warning-text: var(--color-orange-300);
+  --semantic-warning-icon: var(--color-orange-500);
+  --semantic-warning-outline: var(--color-orange-700);
+  --semantic-info-background: var(--color-blue-900);
+  --semantic-info-solid: var(--color-blue-500);
+  --semantic-info-text: var(--color-blue-300);
+  --semantic-info-icon: var(--color-blue-500);
+  --semantic-info-outline: var(--color-blue-700);
+}
+
+.ld-text-display-team {
+  font-family: var(--ld-font-family);
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 0.92;
+  letter-spacing: -0.5px;
+}
+
+.ld-text-display-stat {
+  font-family: var(--ld-font-family);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: 0px;
+}
+
+.ld-text-title-brand {
+  font-family: var(--ld-font-family);
+  font-weight: 800;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+
+.ld-text-title-date {
+  font-family: var(--ld-font-family);
+  font-weight: 800;
+  font-size: 15px;
+  line-height: normal;
+  letter-spacing: 0px;
+}
+
+.ld-text-heading-section {
+  font-family: var(--ld-font-family);
+  font-weight: 800;
+  font-size: 13px;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+
+.ld-text-label-button {
+  font-family: var(--ld-font-family);
+  font-weight: 800;
+  font-size: 13px;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+
+.ld-text-label-strong {
+  font-family: var(--ld-font-family);
+  font-weight: 600;
+  font-size: 13px;
+  line-height: normal;
+  letter-spacing: 0px;
+}
+
+.ld-text-label-medium {
+  font-family: var(--ld-font-family);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: 0px;
+}
+
+.ld-text-label-team {
+  font-family: var(--ld-font-family);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: normal;
+  letter-spacing: 0.1px;
+}
+
+.ld-text-label-caption {
+  font-family: var(--ld-font-family);
+  font-weight: 600;
+  font-size: 10px;
+  line-height: normal;
+  letter-spacing: 0.3px;
+}
+
+.ld-text-body-paragraph {
+  font-family: var(--ld-font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+.ld-text-body-medium {
+  font-family: var(--ld-font-family);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: normal;
+  letter-spacing: 0px;
+}
+
+.ld-text-body-small {
+  font-family: var(--ld-font-family);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: normal;
+  letter-spacing: 0px;
+}
